@@ -31,19 +31,27 @@ div:hover{
 }
 h2{
   
-  animation: rebondir 2s infinite alternate-reverse;
+  animation: rebondir 2s infinite alternate;
+  position: relative;
 
 }
 @keyframes rebondir{
   0%{
     
-    height: 150%;
+    transform: scaleY(2);
+    transform: scaleX(2);
+    transform-origin: 0 0;
+    bottom: 0px;   
   }
   
   100%{
-    font-size: 50%;
-    margin-top: 10%
-    ;
+    
+    transform: scaleX(1);
+    transform:scaleY(2);
+    transform-origin: 0 0;
+    bottom: 100px;
+
+    
   }
 }
 
